@@ -1,0 +1,72 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #c83b50;
+  width: 600px;
+  height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 10px 39px 10px rgba(62, 66, 66, 0.22);
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.card .card_back, .card .card_front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.card .card_back .card_header, .card .card_front .card_header {
+  font-size: 1.2rem;
+  padding: 1rem;
+  background: #c83b50;
+  color: #fff;
+  width: 100%;
+}
+.card .card_back .card_header span, .card .card_front .card_header span {
+  border-bottom: dashed 2px;
+  cursor: pointer;
+}
+.card .card_back .card_body, .card .card_front .card_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #eb8a99;
+  cursor: pointer;
+}
+.card .card_back .card_footer, .card .card_front .card_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+}
+.card .card_front {
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+.card .card_back {
+  display: none;
+  outline: 4px dashed #c83b50;
+  outline-offset: -1rem;
+  border-radius: 22.5px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.card.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.card.flip .card_front {
+  display: none;
+}
+.card.flip .card_back {
+  display: flex;
+}
+
+/*# sourceMappingURL=cardComponent.css.map */
