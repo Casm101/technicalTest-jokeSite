@@ -1,7 +1,7 @@
 // Site Pages
 import Home from '../views/home.js';
 import Category from '../views/category.js';
-//import Error404 from '../views/error404.js';
+import Error404 from '../views/error404.js';
 
 
 const pathToRegex = path => new RegExp('^' + path.replace(/\//g, '\\/').replace(/:\w+/g, '(.+)') + '$');
@@ -31,7 +31,7 @@ const router = async () => {
         { path: '/', view: Home },
 		{ path: '/category/:cat', view: Category },
 
-		//{ path: '/error404', view: Error404 },
+		{ path: '/error404', view: Error404 },
 
     ];
 
@@ -50,7 +50,7 @@ const router = async () => {
     if (!match) {
 
         match = {
-            route: routes.find(x => x.path == '/error-404'),
+            route: routes.find(x => x.path == '/error404'),
             result: [location.pathname]
         };
     }
@@ -62,7 +62,7 @@ const router = async () => {
     window.scrollTo(0, 0);
 
 	// Load eventlisteners if availible
-	loadEventListeners(match.route);
+	//loadEventListeners(match.route);
 };
 
 // Make the router function availible globaly
