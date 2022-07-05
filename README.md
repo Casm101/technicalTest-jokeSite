@@ -1,6 +1,6 @@
 # 🃏 technicalTest-jokeSite
 A simple joke site that displays a random joke from an SQL database imported from the 15Dkatz
-[official_joke_api](https://github.com/15Dkatz/official_joke_api) repo, in a vanilla UI with custom client side routing. 
+[official_joke_api](https://github.com/15Dkatz/official_joke_api) repo, in a vanilla UI with custom client side routing.
 
 
 ## Tech Stack
@@ -55,7 +55,7 @@ If you find a joke you like, feel free to share it with a friend by clicking on 
 
 ![Logo](https://i.postimg.cc/7b8C4GWq/Screenshot-2022-07-06-at-00-41-58.png)
 
-Check out the punchline to my fav joke here: http://christiansmithmantas.com:88/joke/269
+Check out the punchline to my fav joke here: http://christiansmithmantas.com:88/joke/268
 ## API Reference
 
 #### Get a specific joke
@@ -104,4 +104,3 @@ Check out the punchline to my fav joke here: http://christiansmithmantas.com:88/
 - Added endpoints to API
 
 - Search by text feature
-
