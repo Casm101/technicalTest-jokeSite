@@ -43,3 +43,19 @@ button {
 
 	min-height: 100vh;
 }
+
+.errorContainer {
+
+	display: flex; flex-direction: column;
+	align-items: center; justify-content: center;
+	gap: 2rem;
+
+	text-align: center;
+	color: #fff;
+
+	max-width: 700px;
+
+	.errorNum { font-size: 10rem; color: #c83b50; -webkit-text-stroke-width: 4px; -webkit-text-stroke-color: #fff; }
+	.errorTitle { font-size: 4rem; margin-top: -4rem; }
+	.errorDescription { font-size: 1.2rem; }
+}
