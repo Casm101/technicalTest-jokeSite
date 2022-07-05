@@ -1,7 +1,7 @@
 import express 	from 'express';
 import path 	from 'path';
 import fetch 	from 'node-fetch';
-import sqlite3 	from'sqlite3';
+import sqlite3 	from 'sqlite3';
 
 const db = new sqlite3.Database('./jokes.db', sqlite3.OPEN_READWRITE, error => {
 
