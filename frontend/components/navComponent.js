@@ -26,7 +26,7 @@ class NavigationBar {
 				<p class="title"><a href="/" router-link>Jokes!</a></p>
 
 				<ul class="navLinks">
-					<li><a href="/" router-link>ramdom</a></li>
+					<li><a href="/" router-link>random</a></li>
 					<li>
 						<div class="dropdown">
 							<button class="dropdown_button">categories +</button>
