@@ -27,7 +27,7 @@ nav {
 		}
 	}
 
-	a { color: #fff; text-decoration: none; cursor: pointer; }
+	a { color: #fff; text-decoration: none; cursor: pointer; &:hover { color: #ffe6df; } }
 }
 
 .dropdown {
@@ -41,8 +41,17 @@ nav {
 
     cursor: pointer;
 
-	.dropdown_button { background: none; border: none; color: #fff; font-size: 1.2rem; }
+	.dropdown_button {
+
+		border: none;
+		background: none; color: #fff;
+		font-size: 1.2rem;
+
+		&:hover { color: #ffe6df; }
+	}
+
 	.dropdown_content {
+
 		display: none;
 	    flex-direction: column;
 	    justify-content: flex-start !important;
@@ -50,15 +59,15 @@ nav {
 	    top: 100%;
 	    width: 100%;
 	    max-height: 35vh;
-	    overflow-x: hidden;
-	    overflow-y: scroll;
 	    background: #c83b50;
 	    z-index: 100;
 
 		.dropdown_link {
+
 			display: flex; align-items: center;
 			color: #fff; text-decoration: none;
-			height: 2rem; padding: .5rem;
+			height: 3.5rem; padding: .5rem;
+			border-bottom: 1px solid #eb8a99;
 		}
 	}
 
