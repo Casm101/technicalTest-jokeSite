@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Luckiest Guy";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: repeating-radial-gradient(#30263c, #30263c 20px, #2c2238 20px, #2c2238 40px, #281e36 40px, #281e36 60px);
+  background-size: 100px 100px;
+}
+
+button {
+  -webkit-transition: all 0.2s ease-in-out;
+  font-size: 1.2rem;
+  background: #fff;
+  color: #c83b50;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button ion-icon {
+  font-size: 1.5rem;
+}
+button:hover {
+  background: #c83b50;
+  color: #fff;
+}
+
+.routerRender {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=global.css.map */
