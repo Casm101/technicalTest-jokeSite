@@ -1,6 +1,7 @@
 // Site Pages
 import Home from '../views/home.js';
 import Category from '../views/category.js';
+import SingleJoke from '../views/single-joke.js';
 import Error404 from '../views/error404.js';
 
 
@@ -30,6 +31,7 @@ const router = async () => {
 
         { path: '/', view: Home },
 		{ path: '/category/:cat', view: Category },
+		{ path: '/joke/:id', view: SingleJoke },
 
 		{ path: '/error404', view: Error404 },
 
