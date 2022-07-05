@@ -18,12 +18,15 @@ class CardComponent {
     getHtml() {
 
         return `
-			<div class="card" onclick="this.classList.toggle('flip')">
+			<div class="card">
 				<div class="card_front">
 					<div class="card_header">
-						<p class="header_jokeData"> <span>${this.type}</span> joke <span>#${this.jokeID}</span></p>
+						<p class="header_jokeData">
+						<span><a href="/category/${this.type}" router-link>${this.type}</a></span>
+						joke
+						<span><a href="/joke/${this.jokeID}">#${this.jokeID}</a></span></p>
 					</div>
-					<div class="card_body">
+					<div class="card_body" onclick="this.closest('.card').classList.toggle('flip')">
 						<p class="joke">${this.setup}</p>
 					</div>
 					<div class="card_footer">
@@ -31,7 +34,7 @@ class CardComponent {
 					</div>
 				</div>
 				<div class="card_back">
-					<div class="card_body">
+					<div class="card_body" onclick="this.closest('.card').classList.toggle('flip')">
 						<p class="punchline">${this.punchline}</p>
 					</div>
 				</div>
