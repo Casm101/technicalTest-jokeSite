@@ -61,4 +61,23 @@ button:hover {
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 350px) {
+  .onlyMobile {
+    display: inline-block;
+  }
+
+  .notMobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .onlyMobile {
+    display: none;
+  }
+
+  .notMobile {
+    display: inline-block;
+  }
+}
+
 /*# sourceMappingURL=global.css.map */

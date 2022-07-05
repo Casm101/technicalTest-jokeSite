@@ -30,7 +30,7 @@ class CardComponent {
 						<p class="joke">${this.setup}</p>
 					</div>
 					<div class="card_footer">
-						<p># click the card to view the punchline #</p>
+						<p># <span class="onlyMobile">tap</span> <span class="notMobile">click</span> the card to view the punchline #</p>
 					</div>
 				</div>
 				<div class="card_back">

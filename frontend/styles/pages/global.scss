@@ -59,3 +59,14 @@ button {
 	.errorTitle { font-size: 4rem; margin-top: -4rem; }
 	.errorDescription { font-size: 1.2rem; }
 }
+
+
+@media screen and (min-width: 350px) {
+	.onlyMobile { display: inline-block; }
+	.notMobile	{ display: none; }
+}
+
+@media screen and (min-width: 768px) {
+	.onlyMobile { display: none; }
+	.notMobile	{ display: inline-block; }
+}
