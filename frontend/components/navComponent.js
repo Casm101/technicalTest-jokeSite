@@ -17,7 +17,7 @@ class NavigationBar {
 
     async getHtml () {
 
-		const fetchData = await fetch('/api/joke-types', { method: 'GET' });
+		const fetchData = await fetch('/api/joke-categories', { method: 'GET' });
         const resData = await fetchData.json();
         this.types = resData;
 

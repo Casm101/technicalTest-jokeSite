@@ -10,7 +10,7 @@ export default class extends abstractView {
 
     async getHtml() {
 
-		const fetchData = await fetch(`/api/joke-by-category/${this.params.cat}`, { method: 'GET' });
+		const fetchData = await fetch(`/api/joke-categories/${this.params.cat}`, { method: 'GET' });
         const resData = await fetchData.json();
         this.jokeData = resData;
 
