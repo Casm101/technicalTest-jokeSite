@@ -1,0 +1,33 @@
+{
+  "name": "technicaltest-jokesite",
+  "version": "1.0.0",
+  "description": "A technical fullstack project to display my knowledge surrounding the afformentioned subject.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Casm101/technicalTest-jokeSite.git"
+  },
+  "keywords": [
+    "node",
+    "mysql",
+    "sass",
+    "javascript"
+  ],
+  "author": "Christian A. Smith Mantas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Casm101/technicalTest-jokeSite/issues"
+  },
+  "homepage": "https://github.com/Casm101/technicalTest-jokeSite#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.6",
+    "path": "^0.12.7",
+    "sqlite3": "^5.0.8"
+  }
+}
