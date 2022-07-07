@@ -46,17 +46,22 @@ app.get('/api/random-joke', (req, res) => {
 
 app.get('/api/joke/:id', (req, res) => {
 
-	const joke = db.all("SELECT * FROM jokes WHERE id = " + req.params.id + " LIMIT 1;", (err, row) => {  res.json(row[0]); });
+	const joke = db.all(`SELECT * FROM jokes WHERE id = '${req.params.id}' LIMIT 1;`, (err, row) => {  res.json(row[0]); });
 });
 
 app.get('/api/joke-categories/:type', (req, res) => {
 
-	const joke = db.all("SELECT * FROM jokes WHERE type = '" + req.params.type + "' ORDER BY RANDOM() LIMIT 1;", (err, row) => {  res.json(row[0]); });
+	const joke = db.all(`SELECT * FROM jokes WHERE type = '${req.params.type}' ORDER BY RANDOM() LIMIT 1;`, (err, row) => {  res.json(row[0]); });
 });
 
 app.get('/api/joke-categories', (req, res) => {
 
 	const joke = db.all("SELECT DISTINCT type FROM jokes", (err, row) => {  res.json(row); });
+});
+
+app.get('/api/joke-search/:s', (req, res) => {
+
+	const joke = db.all(`SELECT * FROM jokes WHERE setup LIKE '%${req.params.s}%' OR punchline LIKE '%${req.params.s}%'`, (err, row) => {  res.json(row); });
 });
 
 
