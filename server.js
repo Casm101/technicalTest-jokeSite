@@ -19,7 +19,7 @@ const populateDB = () => {
 	.then((response) => response.json())
 	.then((data) => {
 		data.forEach(async (joke) => {
-			db.run('INSERT INTO jokes (type, setup, punchline) VALUES (?, ?, ?);', joke.type, joke.setup, joke.punchline);
+			db.run('INSERT INTO jokes (id, type, setup, punchline) VALUES (?, ?, ?, ?);', joke.id, joke.type, joke.setup, joke.punchline);
 		});
 	});
 
@@ -31,7 +31,7 @@ const populateDB = () => {
 const app = express();
 
 // Connect to SQL database
-db.run('CREATE TABLE if not exists jokes(id INTEGER PRIMARY KEY, type STRING, setup STRING, punchline STRING)');
+db.run('CREATE TABLE if not exists jokes(id INTEGER, type STRING, setup STRING, punchline STRING)');
 
 
 app.use('/styles', express.static(path.resolve('frontend', 'styles')));
